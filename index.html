@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MERAKI - Portal de Resonancia Humana</title>
+  <meta name="description" content="MERAKI: Arquitectura de Resonancia Humana para Startups y PyMEs. Transforma colapso, invisibilidad, rabia y abandono en claridad con Diagnóstico Xpress.">
+  <meta name="keywords" content="growth hacking startups, resonancia humana, claridad operativa, liderazgo PyMEs, diagnóstico MERAKI, colapso laboral, invisibilidad, rabia como motor, abandono transformador">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+
+    /* Enhanced Interactivity & Animations */
+    button, a.bg-green-500 {
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    }
+
+    button:hover:not([class*="underline"]), a.bg-green-500:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    button:active:not([class*="underline"]), a.bg-green-500:active {
+      transform: translateY(0);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .bento-box {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .bento-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+    }
+
+    .helicoid-path {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: draw 2s ease forwards;
+    }
+    @keyframes draw {
+      to { stroke-dashoffset: 0; }
+    }
+    .result-visual {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
+      animation: slideIn 0.5s ease-out forwards, pulse 2s infinite ease-in-out 0.5s;
+    }
+    .result-phrase {
+      animation: fadeIn 0.7s ease-out forwards;
+      animation-delay: 0.3s;
+      opacity: 0;
+    }
+    .result-area button {
+      animation: bounceIn 0.5s ease-out forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+    }
+    @keyframes slideIn {
+      from { transform: translateY(-5px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes bounceIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      50% { transform: scale(1.1); opacity: 0.5; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes blob {
+      0% { transform: translate(0px, 0px) scale(1); }
+      33% { transform: translate(40px, -60px) scale(1.15); }
+      66% { transform: translate(-30px, 30px) scale(0.9); }
+      100% { transform: translate(0px, 0px) scale(1); }
+    }
+    .animate-blob {
+      animation: blob 20s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+      50% { transform: scale(1.05); box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); }
+      100% { transform: scale(1); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .section-animate {
+        animation: fadeInUp 0.8s ease-out forwards;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body class="bg-white font-sans">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

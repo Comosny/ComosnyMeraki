@@ -1,0 +1,5 @@
+{
+  "name": "MERAKI - Human Resonance Portal",
+  "description": "A web application for MERAKI, a consultancy focused on human resonance for Startups and SMEs. It features an interactive diagnostic quiz to identify operational frequencies and provides resources to transform business friction into clarity.",
+  "requestFramePermissions": []
+}
